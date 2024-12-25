@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  ur-hg-main-web:
+    # build: .
+    image: ghcr.io/programmerdatch/ur-hg-main-web:latest
+    ports:
+      - "7000:80"
+    restart: always

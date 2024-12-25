@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="University of Rwanda Holdings Group Limited (UR-HG Ltd) - A limited company fully owned by University of Rwanda, optimizing UR assets for university benefits.">
+    <meta name="keywords" content="UR Holdings Group, University of Rwanda, UR-HG Ltd, Rwanda education, asset optimization">
+    <meta name="author" content="University of Rwanda Holdings Group Limited">
+    <meta property="og:title" content="University of Rwanda Holdings Group Limited">
+    <meta property="og:description" content="A limited company fully owned by University of Rwanda, optimizing UR assets for university benefits.">
+    <meta property="og:type" content="website">
+    <title>University of Rwanda Holdings Group Limited</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            background-attachment: fixed;
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(90deg, #1e40af, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media (max-width: 640px) {
+            .glass-effect {
+                margin: 1rem;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .shadow-blue {
+            box-shadow: 0 4px 20px -2px rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <div class="py-12 md:py-20 px-4 animate-fade-in">
+        <main class="max-w-4xl w-full mx-auto">
+            <div class="glass-effect rounded-2xl shadow-xl p-6 md:p-10 hover-scale">
+                <header class="text-center mb-10">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                        University of Rwanda Holdings Group Limited
+                    </h1>
+                    <div class="h-1 w-24 md:w-32 bg-blue-600 mx-auto mb-4"></div>
+                    <p class="text-lg md:text-xl text-gray-600 font-light tracking-wide">(UR-HG Ltd)</p>
+                </header>
+
+                <section class="space-y-8 mb-10">
+                    <div class="bg-white rounded-xl p-6 md:p-8 shadow-blue">
+                        <img src="logo.png" alt="UR-HG Logo"/>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 md:p-8 shadow-blue">
+                        <h2 class="text-xl md:text-2xl font-bold text-gradient mb-4">About Us</h2>
+                        <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                            University of Rwanda Holdings Group Limited (UR-HG Ltd) is a limited company fully owned by University of Rwanda (UR). Our business activities are strategically focused on optimizing UR assets for the benefits of the University.
+                        </p>
+                    </div>
+                    
+
+                    <div class="bg-blue-50 rounded-xl p-6 md:p-8 text-center transform transition-all duration-300 hover:bg-blue-100">
+                        <h2 class="text-xl md:text-2xl font-bold text-blue-800 mb-3">Website Coming Soon</h2>
+                        <p class="text-base md:text-lg text-blue-600">
+                            We're developing an innovative digital presence to better serve our stakeholders.
+                        </p>
+                    </div>
+                </section>
+
+                <footer class="text-center">
+                    <div class="h-px w-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-6"></div>
+                    <p class="text-gray-600 mb-2">© 2024 University of Rwanda Holdings Group Limited</p>
+                    <p class="text-sm text-gray-500">A Subsidiary of University of Rwanda</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('animate-fade-in');
+        });
+    </script>
+</body>
+</html>
